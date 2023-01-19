@@ -9,7 +9,7 @@ Este proyecto es una simple UI para el API de Preguntas y Respuestas. Es una sim
 ## Requisites
 * [NodeJS](https://nodejs.org/es/)
 * [Angular CLI](https://cli.angular.io/)
-* [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+* [Bootstrap 5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 ## Check requisites
 `node -version`

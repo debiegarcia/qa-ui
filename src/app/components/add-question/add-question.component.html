@@ -7,12 +7,12 @@
                 <div class="mb-3">
                   <label for="title" class="form-label">Title</label>
                   <input type="text" class="form-control" id="title" 
-                  name="title" [(ngModel)]="addQuestionRequest.title">          
+                  name="title" [(ngModel)]="addQuestionRequest.title" maxlength="250">          
                  </div>
                 <div class="mb-3">
                   <label for="description" class="form-label">Description</label>
                   <textarea type="text" class="form-control" id="description" name="description"
-                  rows="5" [(ngModel)]="addQuestionRequest.description"></textarea>          
+                  rows="10" [(ngModel)]="addQuestionRequest.description" maxlength="1000"></textarea>          
                 </div>
                 <div class="mb-3">                    
                     <button type="submit" class="btn btn-primary">Submit</button>

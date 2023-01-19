@@ -15,7 +15,7 @@
                 <div class="mb-3">
                   <h5 for="comment" class="form-label">Write a comment</h5>
                   <textarea type="text" class="form-control" id="comment" name="comment"
-                  rows="3" [(ngModel)]="addReplyRequest.content"></textarea>          
+                  rows="3" [(ngModel)]="addReplyRequest.content" maxlength="1000"></textarea>          
                 </div>
                 <div class="mb-3">                    
                     <button type="submit" class="btn btn-primary">Submit</button>
