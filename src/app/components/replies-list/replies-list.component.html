@@ -1,0 +1,38 @@
+<div class="container my-5">
+    <h3 class="mb-3">{{question.title}}</h3>   
+
+    <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Submitted by {{question.user.firstName + ' ' + question.user.lastName}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{question.createdAt|date:'dd MMMM Y HH:mm a'}}</h6>
+          <p class="card-text">{{question.description}}</p>
+        </div>
+    </div>
+
+    <div class="row justify-content-md-start">
+        <div class="col-sm-12">
+            <form name="myForm" #myForm="ngForm" (ngSubmit)="addReplyMethod()">
+                <div class="mb-3">
+                  <h5 for="comment" class="form-label">Write a comment</h5>
+                  <textarea type="text" class="form-control" id="comment" name="comment"
+                  rows="3" [(ngModel)]="addReplyRequest.content"></textarea>          
+                </div>
+                <div class="mb-3">                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div> 
+
+    <div class="card mb-3" *ngFor="let reply of replies">
+        <div class="card-header">
+          Comment
+        </div>
+        <div class="card-body">
+            <p class="card-text">{{reply.content}}</p>
+            <p class="card-text">{{reply.user.firstName + ' ' + reply.user.lastName}} at <cite title="Source Title">{{reply.createdAt|date:'dd MMMM Y HH:mm a'}}</cite></p>
+        </div>
+    </div>
+    
+</div>
+
