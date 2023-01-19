@@ -12,8 +12,8 @@ Este proyecto es una simple UI para el API de Preguntas y Respuestas. Es una sim
 * [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
 ## Check requisites
-#### `node -version`
-#### `npm -version`
+`node -version`
+`npm -version`
 
 ## Node modules installation
 Ejecutar el comando `npm install` para instalar los módulos de Node.
